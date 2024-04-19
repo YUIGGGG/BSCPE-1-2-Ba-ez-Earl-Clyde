@@ -1,19 +1,14 @@
 import tkinter as tk
-from tkinter import PhotoImage, Button, Label, ACTIVE
+from tkinter import Button, Label, ACTIVE
 from playsound import playsound
 
-user_name = input("What is your name? ")
-user_dream_job = input("What is your dream job? ")
-count = 0
-
-def click():
-    global count
-    count += 1
-    print(count)
-    if count == 1:
-        show_user_info()
+def get_user_info():
+    user_name = input("What is your name? ")
+    user_dream_job = input("What is your dream job? ")
+    return user_name, user_dream_job
 
 def show_user_info():
+    global user_name, user_dream_job
     root = tk.Toplevel()
     root.title("Personal Information")
     root.geometry("300x150")
@@ -22,6 +17,19 @@ def show_user_info():
     label = tk.Label(root, text=user_name_and_dream_job, width=300, height=150,
                      bg="black", fg="yellow")
     label.pack()
+
+def click():
+    global count
+    count += 1
+    print(count)
+    if count == 1:
+        show_user_info()
+
+def play_sound():
+    playsound(r'com_eng_song.mp3')
+
+count = 0
+user_name, user_dream_job = get_user_info()
 
 window = tk.Tk()
 button = Button(window,
@@ -33,9 +41,7 @@ button = Button(window,
                 activeforeground="#00FF00",
                 activebackground="black",
                 state=ACTIVE)
-playsound(r'comengsound.mp3')
 button.pack()
 
+play_sound()  # Play the sound
 window.mainloop()
-
-
