@@ -20,7 +20,7 @@ def handle_choice(choice):
     elif choice == "No":
         close_window()
 
-with open("the_line.txt", "r") as the_lines:
+with open("the_line_of_p3.txt", "r") as the_lines:
     quote_lines = the_lines.readlines()
 
 window = tk.Tk()

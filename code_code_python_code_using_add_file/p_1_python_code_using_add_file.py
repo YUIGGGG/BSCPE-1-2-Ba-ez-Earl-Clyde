@@ -6,7 +6,7 @@ def even_numbers(number):
 def read_numbers():
     even_numbers_list = []
     odd_numbers_list = []
-    with open("numbers.txt", "r") as the_integers:
+    with open("numbers_from_p_1.txt", "r") as the_integers:
         for line in the_integers:
             number = int(line.strip())
             if even_numbers(number):
