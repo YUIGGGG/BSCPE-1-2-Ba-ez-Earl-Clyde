@@ -1,3 +1,4 @@
+import tkinter as tk
 import openpyxl
 
 def get_student_with_highest_gwa():
@@ -31,6 +32,20 @@ def get_student_with_highest_gwa():
 
     return highest_gwa_student, highest_gwa
 
-highest_student, highest_gwa = get_student_with_highest_gwa()
-print("Student with the highest GWA is:", highest_student)
-print("GWA:", highest_gwa)
+def display_highest_gwa():
+    highest_student, highest_gwa = get_student_with_highest_gwa()
+    highest_gwa_str.set(f"Student with the highest GWA:\n{highest_student}\nGWA: {highest_gwa}")
+
+window = tk.Tk()
+window.title("Highest GWA")
+window.geometry("300x200")
+
+highest_gwa_str = tk.StringVar()
+highest_gwa_label = tk.Label(window, textvariable=highest_gwa_str, font=("Helvetica", 12), wraplength=250)
+highest_gwa_label.pack(pady=20)
+
+refresh_button = tk.Button(window, text="Refresh", command=display_highest_gwa)
+refresh_button.pack()
+
+display_highest_gwa()  # Initially display the highest GWA
+window.mainloop()
