@@ -1,48 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a2be23-fe98-475b-86c4-8ddf53d8afa0" name="Changes" comment="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="03409d16-86ec-4899-8268-56cb7f8e800e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/program_number_five.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2g647q9nzj72LZHuEIDDLpY5oss" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2g90LoxcM63zxZlliZZ7ZnpxOkr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Doctests in builtins.executor&quot;: &quot;Run&quot;,
-    &quot;Python.problem_number_five.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;
-    ]
-  }
-}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -53,60 +36,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="87a2be23-fe98-475b-86c4-8ddf53d8afa0" name="Changes" comment="" />
-      <created>1715004529195</created>
+      <changelist id="03409d16-86ec-4899-8268-56cb7f8e800e" name="Changes" comment="" />
+      <created>1715094432848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715004529195</updated>
+      <updated>1715094432848</updated>
     </task>
-    <task id="LOCAL-00001" summary="First">
-      <option name="closed" value="true" />
-      <created>1715011030855</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715011030855</updated>
-    </task>
-    <task id="LOCAL-00002" summary="finished coding the raw code">
-      <option name="closed" value="true" />
-      <created>1715012413783</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715012413783</updated>
-    </task>
-    <task id="LOCAL-00003" summary="trying to add calculator interface">
-      <option name="closed" value="true" />
-      <created>1715012528670</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715012528670</updated>
-    </task>
-    <task id="LOCAL-00004" summary="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this">
-      <option name="closed" value="true" />
-      <created>1715047515049</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715047515049</updated>
-    </task>
-    <task id="LOCAL-00005" summary="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this">
-      <option name="closed" value="true" />
-      <created>1715091608366</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715091608366</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="First" />
-    <MESSAGE value="finished coding the raw code" />
-    <MESSAGE value="trying to add calculator interface" />
-    <MESSAGE value="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this" />
-    <option name="LAST_COMMIT_MESSAGE" value="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this" />
   </component>
 </project>
