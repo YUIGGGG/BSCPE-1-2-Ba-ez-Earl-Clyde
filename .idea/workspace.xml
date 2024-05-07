@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87a2be23-fe98-475b-86c4-8ddf53d8afa0" name="Changes" comment="trying to add calculator interface">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="87a2be23-fe98-475b-86c4-8ddf53d8afa0" name="Changes" comment="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,18 +29,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Doctests in builtins.executor": "Run",
-    "Python.problem_number_five.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Doctests in builtins.executor&quot;: &quot;Run&quot;,
+    &quot;Python.problem_number_five.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,13 +81,22 @@
       <option name="project" value="LOCAL" />
       <updated>1715012528670</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this">
+      <option name="closed" value="true" />
+      <created>1715047515049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715047515049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
     <MESSAGE value="finished coding the raw code" />
     <MESSAGE value="trying to add calculator interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to add calculator interface" />
+    <MESSAGE value="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this" />
+    <option name="LAST_COMMIT_MESSAGE" value="done calculator interface, the calculator buttons is interactable. still fixing it. got no sleep for this" />
   </component>
 </project>
