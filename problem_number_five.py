@@ -2,25 +2,56 @@ import tkinter as tk
 
 
 def calculate():
-    operation = operation_var.get().lower()
-    num1 = float(entry_num1.get())
-    num2 = float(entry_num2.get())
+    try:
+        operation = operation_var.get().lower()
+        num1 = float(entry_num1.get())
+        num2 = float(entry_num2.get())
 
-    if operation == "addition" or operation == "add":
-        result = num1 + num2
-    elif operation == "subtraction" or operation == "subtract" or operation == "minus":
-        result = num1 - num2
-    elif operation == "multiplication" or operation == "multiply" or operation == "times":
-        result = num1 * num2
-    elif operation == "division" or operation == "divide":
-        if num2 != 0:
-            result = num1 / num2
-        else:
-            result = "Error: Division by zero!"
-    else:
-        result = "Invalid operation entered."
+        if operation == "addition":
+            result_of_addition = num1 + num2
+            output_text.config(state=tk.NORMAL)
+            output_text.delete(1.0, tk.END)
+            output_text.insert(tk.END, "Result: " + str(result_of_addition))
+            output_text.config(state=tk.DISABLED)
 
-    label_result.config(text="Result: " + str(result))
+        elif operation == "subtraction":
+            result_of_subtraction = num1 - num2
+            output_text.config(state=tk.NORMAL)
+            output_text.delete(1.0, tk.END)
+            output_text.insert(tk.END, "Result: " + str(result_of_subtraction))
+            output_text.config(state=tk.DISABLED)
+
+        elif operation == "multiplication":
+            result_of_multiplication = num1 * num2
+            output_text.config(state=tk.NORMAL)
+            output_text.delete(1.0, tk.END)
+            output_text.insert(tk.END, "Result: " + str(result_of_multiplication))
+            output_text.config(state=tk.DISABLED)
+
+        elif operation == "division":
+            result_of_division = num1 / num2
+            output_text.config(state=tk.NORMAL)
+            output_text.delete(1.0, tk.END)
+            output_text.insert(tk.END, "Result: " + str(result_of_division))
+            output_text.config(state=tk.DISABLED)
+
+    except ValueError:
+        output_text.config(state=tk.NORMAL)
+        output_text.delete(1.0, tk.END)
+        output_text.insert(tk.END, "Error: Invalid input. Please enter valid numbers.")
+        output_text.config(state=tk.DISABLED)
+
+    except ZeroDivisionError:
+        output_text.config(state=tk.NORMAL)
+        output_text.delete(1.0, tk.END)
+        output_text.insert(tk.END, "Error: Division by zero!")
+        output_text.config(state=tk.DISABLED)
+
+
+def update_number(number):
+    current_text = entry_operation.get()
+    entry_operation.delete(0, tk.END)
+    entry_operation.insert(tk.END, current_text + number)
 
 
 root = tk.Tk()
@@ -57,13 +88,15 @@ buttons = [
 ]
 
 for (text, row, col) in buttons:
-    button = tk.Button(button_frame, text=text, width=5, height=2)
+    button = tk.Button(button_frame, text=text, width=5, height=2, command=lambda t=text: update_number(t))
     button.grid(row=row, column=col)
 
 button_calculate = tk.Button(root, text="Calculate", command=calculate)
 button_calculate.grid(row=4, columnspan=2)
 
-label_result = tk.Label(root, text="")
-label_result.grid(row=5, columnspan=2)
+output_text = tk.Text(root, height=4, width=20)
+output_text.grid(row=6, columnspan=2)
+output_text.insert(tk.END, "Disclaimer: The buttons are not working on Number 1 and Number 2.")
+output_text.config(state=tk.DISABLED)
 
 root.mainloop()
