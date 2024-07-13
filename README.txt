@@ -2,4 +2,4 @@ my problem number 5 is in branch 'master'
 
 problem number 4 was deleted
 
-program number 2 was name OOP
+program number 2 was named OOP
